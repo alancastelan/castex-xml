@@ -1,11 +1,24 @@
 {
-  "name": "CastechXml",
+  "name": "castex-xml",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "Modulo que auxilia a manipulação de xml",
   "license": "MIT",
+  "author": { 
+    "name": "Alan Castelan"
+  },
+  "keywords": ["XML"],
   "scripts": {
     "dev": "node test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alancastelan/castex-xml.git"
+  },
+  "bugs": {
+    "url":"https://github.com/alancastelan/castex-xml/issues/"
+  },
+  "homepage": "https://github.com/alancastelan/castex-xml#readme",
   "dependencies": {
     "moment": "^2.29.4",
     "node-fetch": "^2.6.7",
