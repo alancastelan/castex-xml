@@ -2,7 +2,7 @@
  * @ Author: Alan Castelan - Castech
  * @ Create Time: 2022-12-29 10:07:51
  * @ Modified by: Alan Castelan
- * @ Modified time: 2023-02-09 08:45:38
+ * @ Modified time: 2023-02-09 09:01:53
  * @ Description: email: alancastelan.ac@gmail.com
  */
 
@@ -24,12 +24,12 @@ module.exports = {
           }
 
           var pfx = fs.readFileSync(Path);
-          const p12buffer = pfx.toString("base64");
+          var p12buffer = pfx.toString("base64");
 
-          const asn = forge.asn1.fromDer(forge.util.decode64(p12buffer));
+          var asn = forge.asn1.fromDer(forge.util.decode64(p12buffer));
 
           try{
-            const p12 = forge.pkcs12.pkcs12FromAsn1(asn, true, Pass);
+            var p12 = forge.pkcs12.pkcs12FromAsn1(asn, true, Pass);
           }catch(err){
             await Context.Log.err(
               "Senha do certificado está incorreta!"
@@ -37,7 +37,7 @@ module.exports = {
             return false;
           }
 
-          const keyData = p12
+          var keyData = p12
             .getBags({ bagType: forge.pki.oids.pkcs8ShroudedKeyBag })
             [forge.pki.oids.pkcs8ShroudedKeyBag].concat(
               p12.getBags({ bagType: forge.pki.oids.keyBag })[

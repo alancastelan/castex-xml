@@ -2,9 +2,12 @@
  * @ Author: Alan Castelan - Castech
  * @ Create Time: 2022-12-29 11:50:24
  * @ Modified by: Alan Castelan
- * @ Modified time: 2023-02-09 08:17:58
- * @ Description:
+ * @ Modified time: 2023-02-09 08:55:00
+ * @ Description: email: alancastelan.ac@gmail.com
+ * discord - https://discord.gg/vXXhu5h6
  */
+
+
 
 import CastexXml from "../index.js";
 
