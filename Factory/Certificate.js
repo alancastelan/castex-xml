@@ -7,19 +7,27 @@ module.exports = {
       /* Faz a Leitura do arquivo PFX  */
       Load: async (Path, Pass) => {
         try {
-          /*
+          
           if (!fs.existsSync(Path)) {
             await Context.Log.err(
               "O Arquivo do Certificado não foi encontrado, verifique se o caminho esta correto!"
             );
             return false;
-          }*/
+          }
 
           var pfx = fs.readFileSync(Path);
           const p12buffer = pfx.toString("base64");
 
           const asn = forge.asn1.fromDer(forge.util.decode64(p12buffer));
-          const p12 = forge.pkcs12.pkcs12FromAsn1(asn, true, Pass);
+
+          try{
+            const p12 = forge.pkcs12.pkcs12FromAsn1(asn, true, Pass);
+          }catch(err){
+            await Context.Log.err(
+              "Senha do certificado está incorreta!"
+            );
+            return false;
+          }
 
           const keyData = p12
             .getBags({ bagType: forge.pki.oids.pkcs8ShroudedKeyBag })

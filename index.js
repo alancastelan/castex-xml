@@ -2,7 +2,7 @@
  * @ Author: Alan Castelan - Castech
  * @ Create Time: 2022-12-29 09:52:55
  * @ Modified by: Alan Castelan
- * @ Modified time: 2023-02-06 11:20:06
+ * @ Modified time: 2023-02-09 08:23:50
  * @ Description:
  */
 
@@ -11,7 +11,9 @@ var Factory = {
         Lista dos módulos que Moldam o Contexto será iniciado sequencialmente,
         
         */
-        List: [   
+        List: [ 
+            /* Estrutura de logs */
+            "Log",  
             /* Cria a estrutura Certificate */
             "Certificate",
             /* Cria a estrutura Sign */
