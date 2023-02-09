@@ -1,6 +1,6 @@
 {
   "name": "castex-xml",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "description": "Modulo que auxilia a manipulação de xml",
   "license": "MIT",

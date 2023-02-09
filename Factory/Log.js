@@ -1,3 +1,11 @@
+/**
+ * @ Author: Alan Castelan - Castech
+ * @ Create Time: 2023-02-09 08:16:47
+ * @ Modified by: Alan Castelan
+ * @ Modified time: 2023-02-09 08:45:40
+ * @ Description: email: alancastelan.ac@gmail.com
+ */
+
 module.exports = {
 
     Init(Context){

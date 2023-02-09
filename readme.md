@@ -31,3 +31,5 @@ para testar utilize yarn dev
 ## ✒️ Autores
 
 * **Alan Castelan** - *Trabalho Inicial* - [Castech](https://github.com/alancastelan)
+
+Discord - https://discord.gg/vXXhu5h6

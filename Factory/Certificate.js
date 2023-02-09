@@ -1,3 +1,11 @@
+/**
+ * @ Author: Alan Castelan - Castech
+ * @ Create Time: 2022-12-29 10:07:51
+ * @ Modified by: Alan Castelan
+ * @ Modified time: 2023-02-09 08:45:38
+ * @ Description: email: alancastelan.ac@gmail.com
+ */
+
 const forge = require("node-forge");
 const fs = require("fs");
 
